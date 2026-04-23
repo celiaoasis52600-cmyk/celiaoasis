@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celia Oasis | سيليا أوازيس</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Tajawal -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Tajawal', sans-serif; }
+        ::selection { background-color: #F5B041; color: #0A1F16; }
+    </style>
+</head>
+<body class="bg-[#0A1F16] text-gray-200 antialiased selection:bg-[#F5B041] selection:text-[#0A1F16]">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 border-b border-[#F5B041]/10 bg-transparent py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-[#F5B041] to-[#D68910] flex items-center justify-center shadow-lg">
+                    <i class="fas fa-leaf text-2xl text-[#0A1F16]"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-2xl font-bold tracking-wide text-white leading-none">
+                        Celia <span class="text-[#F5B041]">Oasis</span>
+                    </span>
+                    <span class="text-[10px] text-gray-400 tracking-wider">شريكك التقني في الدواجن</span>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-8 space-x-reverse">
+                <a href="#home" class="text-gray-300 hover:text-[#F5B041] transition-colors font-medium">الرئيسية</a>
+                <a href="#about" class="text-gray-300 hover:text-[#F5B041] transition-colors font-medium">عن المشروع</a>
+                <a href="#pillars" class="text-gray-300 hover:text-[#F5B041] transition-colors font-medium">خدماتنا ومنتجاتنا</a>
+                <a href="https://wa.me/212600000000" target="_blank" class="flex items-center gap-2 bg-[#F5B041] text-[#0A1F16] px-6 py-2.5 rounded-md font-bold hover:bg-[#F39C12] transition-colors shadow-[0_4px_15px_rgba(245,176,65,0.3)]">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    تواصل مع الخبير
+                </a>
+            </div>
+
+            <button class="md:hidden text-[#F5B041] text-2xl" onclick="toggleMenu()">
+                <i id="menu-icon" class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-[#06140E] border-b border-[#F5B041]/20 py-6 flex-col items-center gap-6 shadow-xl">
+            <a href="#home" onclick="toggleMenu()" class="text-white hover:text-[#F5B041] text-lg">الرئيسية</a>
+            <a href="#about" onclick="toggleMenu()" class="text-white hover:text-[#F5B041] text-lg">عن المشروع</a>
+            <a href="#pillars" onclick="toggleMenu()" class="text-white hover:text-[#F5B041] text-lg">خدماتنا ومنتجاتنا</a>
+            <a href="https://wa.me/212600000000" target="_blank" class="flex items-center gap-2 bg-[#F5B041] text-[#0A1F16] px-8 py-3 rounded-md font-bold mt-2">
+                <i class="fab fa-whatsapp text-xl"></i>
+                تواصل معنا
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[90vh]">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0A1F16] via-[#0A1F16]/90 to-transparent z-10"></div>
+            <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&q=80&w=1600" alt="Poultry Farm" class="w-full h-full object-cover opacity-40" />
+        </div>
+
+        <div class="container mx-auto px-6 relative z-20">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 border border-[#F5B041]/40 bg-[#F5B041]/10 text-[#F5B041] px-4 py-2 rounded-full text-sm font-bold mb-6 backdrop-blur-sm">
+                    <i class="fas fa-chart-line"></i>
+                    من هواية مكلفة إلى مشروع احترافي مربح
+                </div>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+                    نقلل مصاريفك، <br/>
+                    <span class="text-[#F5B041]">ونضاعف إنتاجيتك.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl">
+                    في سيليا أوازيس، نحن لسنا مجرد مورد للمعدات، بل <strong>شريكك التقني</strong>. نوفر لك أفضل سلالات الدواجن، بدائل الأعلاف الذكية (الأزولا)، وفقاسات الأمان المتطورة لضمان استمرارية ونجاح مشروعك (الكوري ديالك).
+                </p>
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <a href="https://wa.me/212600000000" target="_blank" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#F5B041] hover:bg-[#F39C12] text-[#0A1F16] px-8 py-4 rounded-md font-bold text-lg transition-all shadow-[0_0_20px_rgba(245,176,65,0.3)] hover:-translate-y-1">
+                        استشر الخبير الآن
+                        <i class="fas fa-chevron-left mr-2 text-sm"></i>
+                    </a>
+                    <a href="#pillars" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-white/5 border border-white/20 text-white hover:bg-white/10 px-8 py-4 rounded-md font-bold text-lg transition-all backdrop-blur-sm">
+                        اكتشف حلولنا
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-[#06140E] relative border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-[#F5B041]/10 blur-2xl rounded-full"></div>
+                    <div class="relative grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1592424095454-0063234d9439?auto=format&fit=crop&q=80&w=800" alt="Farmer" class="rounded-xl shadow-lg border border-white/10" />
+                        <img src="https://images.unsplash.com/photo-1548455799-d754b2382c40?auto=format&fit=crop&q=80&w=800" alt="Chicks" class="rounded-xl shadow-lg border border-white/10 mt-8" />
+                    </div>
+                </div>
+                
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                        لماذا <span class="text-[#F5B041]">Celia Oasis</span>؟
+                    </h2>
+                    <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                        نحن نفهم "ألم" الكساب المغربي: غلاء العلف، موت الكتاكيت (الفلاليس)، وضعف الإنتاج. لذلك، قمنا ببناء منظومة متكاملة تضع التكنولوجيا والحلول العملية بين يديك.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <!-- Feature 1 -->
+                        <div class="flex gap-4 items-start">
+                            <div class="mt-1 bg-[#F5B041]/20 p-3 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-shield-alt text-xl text-[#F5B041]"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1">توفير التكاليف</h3>
+                                <p class="text-gray-400">نساعدك على خفض تكلفة العلف بنسبة تصل إلى 40% عبر زراعة الأزولا.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div class="flex gap-4 items-start">
+                            <div class="mt-1 bg-[#F5B041]/20 p-3 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-shield-alt text-xl text-[#F5B041]"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1">إنتاجية مضمونة</h3>
+                                <p class="text-gray-400">سلالات أصيلة مختارة بعناية (مثل الليغورن) لضمان أعلى معدلات إنتاج البيض.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div class="flex gap-4 items-start">
+                            <div class="mt-1 bg-[#F5B041]/20 p-3 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-shield-alt text-xl text-[#F5B041]"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1">تكنولوجيا موثوقة</h3>
+                                <p class="text-gray-400">فقاسات ذكية تحميك من تقلبات الرطوبة والحرارة، وتضمن لك ديماراج ناجح.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pillars Section -->
+    <section id="pillars" class="py-24 bg-[#0A1F16] relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+                    ركائز <span class="text-[#F5B041]">النجاح</span> لمشروعك
+                </h2>
+                <p class="text-gray-400 text-lg">
+                    نوفر لك كل ما تحتاجه لبناء مشروع دواجن عصري، متكامل، ومربح.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
+                <div class="bg-[#06140E] rounded-2xl overflow-hidden border border-white/5 hover:border-[#F5B041]/40 transition-all duration-300 group hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#F5B041]/10 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1522277053075-8131d2797e59?auto=format&fit=crop&q=80&w=800" alt="Sialat" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                    </div>
+                    <div class="p-8 relative flex-1 flex flex-col">
+                        <div class="absolute -top-10 right-8 bg-[#0A1F16] border border-white/10 p-4 rounded-xl z-20 shadow-lg flex items-center justify-center w-16 h-16">
+                            <i class="fas fa-egg text-3xl text-[#F5B041]"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mt-4 mb-1">الاستثمار الحي (السلالات)</h3>
+                        <h4 class="text-[#F5B041] font-medium mb-4">الليغورن والأوسترالوب</h4>
+                        <p class="text-gray-400 leading-relaxed flex-1">
+                            جودة الكتكوت تبدأ من البيضة. وفرنا لك سلالة 'الليغورن' (ماكينة البيض بـ 320 بيضة/سنة) و'الأوسترالوب' للّحم والبيض. فلاليس بصحة ممتازة لمشروع احترافي.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-[#06140E] rounded-2xl overflow-hidden border border-white/5 hover:border-[#F5B041]/40 transition-all duration-300 group hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#F5B041]/10 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1525498128493-380d1990a112?auto=format&fit=crop&q=80&w=800" alt="Azolla" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                    </div>
+                    <div class="p-8 relative flex-1 flex flex-col">
+                        <div class="absolute -top-10 right-8 bg-[#0A1F16] border border-white/10 p-4 rounded-xl z-20 shadow-lg flex items-center justify-center w-16 h-16">
+                            <i class="fas fa-leaf text-3xl text-[#F5B041]"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mt-4 mb-1">ثورة الأعلاف (الأزولا)</h3>
+                        <h4 class="text-[#F5B041] font-medium mb-4">بديل العلف الطبيعي</h4>
+                        <p class="text-gray-400 leading-relaxed flex-1">
+                            نقص حتى لـ 40% من مصاريف العلف المركب. حوّل السطح أو الجردة لمصنع علف فابور! الأزولا كتعطيك 8 كيلو كل 5 أيام فالمتر المربع. بروتين طبيعي ومضمون.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-[#06140E] rounded-2xl overflow-hidden border border-white/5 hover:border-[#F5B041]/40 transition-all duration-300 group hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#F5B041]/10 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="Incubator" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                    </div>
+                    <div class="p-8 relative flex-1 flex flex-col">
+                        <div class="absolute -top-10 right-8 bg-[#0A1F16] border border-white/10 p-4 rounded-xl z-20 shadow-lg flex items-center justify-center w-16 h-16">
+                            <i class="fas fa-cog text-3xl text-[#F5B041]"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mt-4 mb-1">تكنولوجيا التفقيس</h3>
+                        <h4 class="text-[#F5B041] font-medium mb-4">فقاسات الأمان الذكية</h4>
+                        <p class="text-gray-400 leading-relaxed flex-1">
+                            ماتشريش صندوق، اشري شريك نجاح! فقاسات بجودة مغربية ومعايير عالمية (ساندويتش بانل، أقراص دوارة للرطوبة، تحكم ذكي عبر الهاتف) لتفقيس ناجح وبدون ضياع.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-[#06140E] to-[#0A1F16] relative border-y border-[#F5B041]/20">
+        <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                مستعد تحول مشروعك لـ <span class="text-[#F5B041]">مستوى آخر</span>؟
+            </h2>
+            <p class="text-gray-300 text-lg max-w-2xl mx-auto mb-10">
+                سواء كنت تفكر في شراء فقاسة، سلالات جديدة، أو تريد البدء في زراعة الأزولا، فريق سيليا أوازيس هنا لتقديم الاستشارة التقنية المواكبة لك.
+            </p>
+            <a href="https://wa.me/212600000000" target="_blank" class="inline-flex items-center gap-3 bg-[#F5B041] hover:bg-[#F39C12] text-[#0A1F16] px-10 py-5 rounded-md font-bold text-xl transition-all shadow-[0_0_30px_rgba(245,176,65,0.2)] hover:scale-105">
+                <i class="fab fa-whatsapp text-2xl"></i>
+                تواصل معنا على الواتساب
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#040C08] py-12 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-leaf text-2xl text-[#F5B041]"></i>
+                    <span class="text-2xl font-bold tracking-wide text-white">
+                        Celia <span class="text-[#F5B041]">Oasis</span>
+                    </span>
+                </div>
+
+                <div class="flex items-center gap-6 text-gray-400">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-[#F5B041]"></i>
+                        <span>المغرب</span>
+                    </div>
+                    <div class="flex items-center gap-2" dir="ltr">
+                        <i class="fas fa-phone text-[#F5B041]"></i>
+                        <span>+212 600-000000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 pt-8 border-t border-white/5 text-center flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
+                <p>© 2024 Celia Oasis. جميع الحقوق محفوظة.</p>
+                <p>شريكك التقني في عالم الدواجن</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts for interaction -->
+    <script>
+        // Navbar Scroll Effect
+        const nav = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-[#06140E]/95', 'backdrop-blur-md', 'shadow-lg', 'py-3');
+                nav.classList.remove('bg-transparent', 'py-6');
+            } else {
+                nav.classList.remove('bg-[#06140E]/95', 'backdrop-blur-md', 'shadow-lg', 'py-3');
+                nav.classList.add('bg-transparent', 'py-6');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        function toggleMenu() {
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                menuIcon.classList.add('fa-bars');
+                menuIcon.classList.remove('fa-times');
+            }
+        }
+    </script>
+</body>
+</html>
